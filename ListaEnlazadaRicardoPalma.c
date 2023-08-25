@@ -19,13 +19,13 @@ typedef Nodo* NodoPtr;
 
 ///
 
-Alumno* crearAlumno(char* nombreCompleto, int creditosAprobados, int semestreEquivalente);
+AlumnoPtr crearAlumno(char* nombreCompleto, int creditosAprobados, int semestreEquivalente);
 
 void imprimirAlumno();
 
-NodoPtr crearNodo(Alumno* alumno);
+NodoPtr crearNodo(AlumnoPtr alumno);
 
-int insertarNodoOrdenadoCréditos(*nodo);
+int insertarNodoOrdenadoCreditos(NodoPtr nodo);
 
 void imprimirLista();
 
